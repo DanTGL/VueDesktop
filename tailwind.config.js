@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     "./index.html",
@@ -7,5 +9,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addVariant }) {
+      addVariant('sm-win', '.sm &')
+      addVariant('md-win', '.md &')
+    })
+  ],
 }

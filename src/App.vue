@@ -1,6 +1,8 @@
 <template>
   <AppWindow>
-  tesy
+  <div class="sm-win:bg-blue-500 md-win:bg-black">
+  test
+  </div>
   </AppWindow>
   <AppWindow>
   t

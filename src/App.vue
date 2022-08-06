@@ -44,10 +44,7 @@ export default defineComponent({
       title: 'Current count: 0',
       class: 'modern',
     };*/
-    const projects = ref();
-    const experience = ref();
 
-    const apps = ref([projects, experience]);
     /*const app1 = ref();
     const app2 = ref();*/
     setInterval(() => {
@@ -61,9 +58,6 @@ export default defineComponent({
 
     return {
       openApps,
-      projects,
-      experience,
-      apps,
       /*count,
       size,
       classObject,
